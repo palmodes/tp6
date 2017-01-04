@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+	  <meta charset="UTF_8">
+	  <link rel="stylesheet" media="screen" href="/assets/style.css"/>
+  </head>
+  <body>
+    <p>
+      CLIQUEZ DANS LA ZONE POUR CHANGER SA COULEUR
+    </p>
+    <div id="carre" style="width:500px;height:500px;border:1px solid #000;" onclick="couleur(this)">
+    <script>
+        function couleur() {
+        var color= prompt("Entrer la couleur","#");
+         if (color != null) {
+         var car =document.getElementById("carre");
+        car.style.backgroundColor=color;
+          }
+        }
+   </script>
+    </div>
+  </body>
+</html>
