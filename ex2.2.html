@@ -8,6 +8,7 @@
     <img  id="lampe" src="off.png" onclick="allumer()">
     <script>
       var etat=0;
+      var swap=setInterval(function(){allumer()},1000);
         function allumer() {
          if (etat ==0){
          etat=1;
@@ -16,7 +17,6 @@
 						lampe.src="off.png"
 						etat=0;
 					}
-					
         }
    </script>
   </body>
