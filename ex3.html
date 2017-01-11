@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Formulaire</title>
-</head>
-
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+  </head>
   <body>
     <form action="http://www.iut-fbleau.fr/sitebp/post.php" method="post" id="myForm">
       <label for="date de naissance">Date de naissance (format jj/mm/aaaa)</label></br>
-        <input type="date" name="date" pattern="[0-9][0-9]/[0-9][0-9]/[0-9][0-9][0-9][0-9]" required></form>
+        <input type="date" name="date" required></form>
         <input type="text" name="age"></br>
         <input type="button" onclick="myFunction()" value="Votre age">
-       
     </form>
     <script>
-function myFunction() {
-    if(exec!=0){
-    document.getElementById("myForm").reset();
-    }else{
-      
-    }
-</script>
+      function myFunction() {
+        var patt =new RegExp("[0-9][0-9]/[0-9][0-9]/[0-9][0-9][0-9][0-9]");
+        var res =patt.exec(str);
+        if(){
+          document.getElementById("myForm").reset();
+        }else{
+          
+        }
+    </script>
   </body>
-
 </html>                                         
